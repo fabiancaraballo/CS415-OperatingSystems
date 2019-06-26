@@ -1,0 +1,19 @@
+create topic 1 tester 10
+create topic 2 tester 5
+create topic 3 tester 8
+
+query topics
+
+add publisher publisher_example.txt
+
+query publishers
+
+add subscriber subscriber_example.txt
+add subscriber subscriber_example.txt
+
+query subscribers
+
+delta 10
+
+start
+

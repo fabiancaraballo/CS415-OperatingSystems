@@ -1,0 +1,32 @@
+Name: Fabian Caraballo
+Student ID:951503025
+Duck ID: fpc
+
+
+I ran my project and it runs pretty good except for one thing. Whenever angram.c is ran I get a warning which I am able to ignore and still get the proper output. The warning I am get when anagram.c is ran is
+
+"anagram.c: In function ‘AddWordAList’:
+anagram.c:284:29: warning: passing argument 1 of ‘AppendSList’ from incompatible pointer type
+                 AppendSList(newNode->Words, newString);
+                             ^
+anagram.c:54:6: note: expected ‘struct StringList **’ but argument is of type ‘struct StringList *’
+ void AppendSList(struct StringList **head, struct StringList *node) {
+      ^
+"
+
+
+However I am able to ignore this and still run. When I run the commands:
+./anagram <anytestFILE>.dict
+
+	OR
+
+./anagram <anytestFILE>.dict > <name>.out
+diff <name>.out <GIVENtestOUTPUTS>.out
+
+It works just fine which is nice.
+
+When I run valgrind I get no signs of memory leaks which is great. (At least I think so, I am not the best with valgrind but my output looks very similar to the valgrind post from piazza where Roscoe said "The output looks great"
+so I am going to assume that this is the same case with my program!)
+
+
+

@@ -1,0 +1,23 @@
+create topic 0 basketball 25
+create topic 1 outdoor adventures 50
+create topic 2 stuff on cats 10
+
+query topics
+
+create publisher sports_publisher.txt
+create publisher cats_and_basketball_publisher.txt
+create publisher outdoor_publisher.txt
+
+query publishers
+
+create subscriber basketball_reader.txt
+create subscriber everything_reader.txt
+
+query subscribers
+
+delta 100
+
+start
+
+
+

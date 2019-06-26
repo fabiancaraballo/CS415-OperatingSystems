@@ -1,0 +1,52 @@
+0) Fabian Caraballo
+
+
+1) Files include in project2:
+	-helpers.c
+		- helpers.c is the file that contains all the working parts for parts 1 - 5. This contains the code for the topic queue, subscribers, and publishers. What I did was started part1 and from there built on parts 2 - 5 in this helpers.c. I was able to test each individual part to make sure it works before I moved onto the next part. 
+
+	-helpers.h
+		-This is the header file that contains the structs for the topic entry, the topic queue, and a "worker" which is used in the publisher and subscriber. This file also sets the helpers functions mainily for part1, enqueue, dequeue, and getentry.
+
+	-InstaQuack.c
+		-This file is the main heart of the InstaQuack. This helps wiwith the standard input or file reading that will take place for parts 3-5. 
+
+	- <ANY_FILE>.txt
+		- Each of these .txt files are used for testing parts 1-3. The "create topics ...." part of each file is used to help work with the topic queue, which ensures thats parts 1 and 2 work. Parts 3, 4, and 5 are expanded versions of the topic queue to ensure that the subscriber and publisher work as well.  
+			- piazza_tester.txt(got from the input example file from piazza, is used to test part3.)
+			- part45_tester.txt is used to test parts 4 and 5.
+			- sub_more_tester.txt is used to test parts 4 & 5 as well.	
+				-basketball_reader.txt, publisher_example_output.txt, cats_and_basketball_publisher.txt, publisher_example.txt, everything_reader.txt, outdoor_publisher.txt,subscriber_example.txt, piazza_tester.txt
+					-These are all helper files for partsthe main .txt files. 
+
+
+
+
+2) Code Evaluation: I ran out of time to build proper test cases for parts 1 and 2 since I was coding and testing as I go but parts 1 and 2 are exemplified in the testing for parts 3, 4, and 5. In order for the subscriber and publisher to work it takes dequeue, getentry, and enqueue which are the topic queueu functions to help get each part working. 
+
+To test code:
+part1 - 3:
+"gcc InstaQuack.c -lpthread"
+"./a.out < piazza_tester.txt"
+
+part4&5: 
+step 1) "gcc InstaQuack.c -lpthread"
+step 2)	"./a.out < part45_tester.txt" -this tests what happens when there are more publishers than subsribers.
+		
+	or
+	
+	"./a.out < sub_more_tester.txt" -this tests what happens when there are more subscirbers than publishers.
+
+
+Note about part5: 
+	-to ensure that part5 is working, you can see after a command is ran, 		we can look back in the directory to see a .html file that we can
+	open in our internet browser that shows the live webpage of InstaQuack.
+
+
+
+3)I have tested all of the parts inside of the virtual machine so it is good to test on there. Can be tested by the following commands:
+
+
+4) From my understanding of the project requirements, everything works. I had trouble of really grasping every little detail of the project, the piazza posts were very helpful so I tried to gather as much information as possible to make sure I have a clear understanding of what is required so from my knowledge, I believe this works as intended. 
+
+
